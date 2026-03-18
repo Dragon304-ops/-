@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>متجري | شبيه أمازون</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>متجري</h1>
+    <div class="login-buttons">
+        <button class="google" onclick="login('Google')">جوجل</button>
+        <button class="facebook" onclick="login('Facebook')">فيسبوك</button>
+        <button class="phone" onclick="login('Phone')">الهاتف</button>
+        <button class="cart-toggle" onclick="toggleCart()">🛒 سلة المشتريات</button>
+    </div>
+</header>
+
+<main class="container">
+    <section>
+        <h2>منتجاتنا</h2>
+        <div class="products" id="products"></div>
+    </section>
+
+    <section class="contact">
+        <h3>تواصل معي</h3>
+        <p>رقم الهاتف: <span id="phone-number">01509965122</span></p>
+        <button onclick="callMe()">اتصل الآن 📞</button>
+        <button class="whatsapp-btn" onclick="whatsappMe()">واتساب 💬</button>
+    </section>
+</main>
+
+<div class="cart" id="cart">
+    <h2>سلة المشتريات</h2>
+    <div id="cart-items"></div>
+    <div class="address">
+        <h3>عنوان التوصيل</h3>
+        <input type="text" id="address" placeholder="ادخل عنوان التوصيل">
+        <button onclick="checkout()">إتمام الطلب</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
